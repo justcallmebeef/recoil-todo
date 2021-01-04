@@ -12,7 +12,7 @@ export const TodoListFilters = () => {
   return (
     <>
       Filter:
-      <select value={filter} onChange={updateFilter}>
+      <select value={filter} onChange={updateFilter} className="mb-4">
         <option value="Show All">All</option>
         <option value="Show Completed">Completed</option>
         <option value="Show Uncompleted">Uncompleted</option>

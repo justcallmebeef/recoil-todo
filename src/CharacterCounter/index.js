@@ -33,9 +33,12 @@ const TextInput = () => {
 
 export function CharacterCounter() {
   return (
-    <div>
-      <TextInput />
-      <CharacterCount />
-    </div>
+    <>
+      <h1 className="mt-4">Character Counter</h1>
+      <div className="m-3">
+        <TextInput />
+        <CharacterCount />
+      </div>
+    </>
   );
 }

@@ -11,12 +11,15 @@ export const TodoList = () => {
 
   return (
     <>
-      <TodoListStats />
-      <TodoListFilters />
-      <TodoItemCreator />
-      {todoList.map((todoItem) => (
-        <TodoItem key={todoItem.id} item={todoItem} />
-      ))}
+      <h1 className="mt-4">Todo List</h1>
+      <div className="m-3">
+        <TodoListStats />
+        <TodoListFilters />
+        <TodoItemCreator />
+        {todoList.map((todoItem) => (
+          <TodoItem key={todoItem.id} item={todoItem} />
+        ))}
+      </div>
     </>
   );
 };

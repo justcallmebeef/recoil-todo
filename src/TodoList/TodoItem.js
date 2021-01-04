@@ -43,6 +43,7 @@ export const TodoItem = ({ item }) => {
         type="checkbox"
         checked={item.isComplete}
         onChange={toggleItemCompletion}
+        className="m-4"
       />
       <button onClick={deleteItem}>X</button>
     </div>

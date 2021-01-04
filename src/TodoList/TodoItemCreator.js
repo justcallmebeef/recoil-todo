@@ -31,7 +31,9 @@ export const TodoItemCreator = () => {
         onChange={onChange}
         className="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline"
       />
-      <button onClick={addItem}>Add</button>
+      <button onClick={addItem} className="ml-4">
+        Add
+      </button>
     </div>
   );
 };
